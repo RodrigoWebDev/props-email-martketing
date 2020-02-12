@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EMKT</title>
+
+    <style>
+        /* ********** RESET ********** */
+        #outlook a {
+            padding: 0;
+        }
+
+        
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .ExternalClass {
+            width: 100%;
+        }
+
+        
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        
+        #backgroundTable {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            line-height: 100% !important;
+        }
+
+        
+        img {
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a img {
+            border: none;
+        }
+
+        .image_fix {
+            display: block;
+        }
+
+        
+        p {
+            margin: 1em 0;
+        }
+
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: black !important;
+        }
+
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            color: blue !important;
+        }
+
+        h1 a:active,
+        h2 a:active,
+        h3 a:active,
+        h4 a:active,
+        h5 a:active,
+        h6 a:active {
+            color: red !important;
+            
+        }
+
+        h1 a:visited,
+        h2 a:visited,
+        h3 a:visited,
+        h4 a:visited,
+        h5 a:visited,
+        h6 a:visited {
+            color: purple !important;
+            
+        }
+
+        
+        table td {
+            border-collapse: collapse;
+        }
+
+        
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        
+        a {
+            color: orange;
+        }
+
+        
+        @media only screen and (max-device-width: 480px) {
+
+            
+            a[href^="tel"],
+            a[href^="sms"] {
+                text-decoration: none;
+                color: black;
+            
+                pointer-events: none;
+                cursor: default;
+            }
+
+            .mobile_link a[href^="tel"],
+            .mobile_link a[href^="sms"] {
+                text-decoration: default;
+                color: orange !important;
+                pointer-events: auto;
+                cursor: default;
+            }
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            a[href^="tel"],
+            a[href^="sms"] {
+                text-decoration: none;
+                color: blue;
+                pointer-events: none;
+                cursor: default;
+            }
+
+            .mobile_link a[href^="tel"],
+            .mobile_link a[href^="sms"] {
+                text-decoration: default;
+                color: orange !important;
+                pointer-events: auto;
+                cursor: default;
+            }
+        }
+
+        /* ********** STYLES ********** */
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            background: url(img/bg.jpg);
+        }
+
+        .main-title td {
+            text-align: center;
+        }
+
+        .main-title span {
+            font-weight: bolder;
+            color: rgba(0, 0, 0, .8);
+            font-size: 20px;
+        }
+
+        .divider tr {
+            height: 1px;
+            background: rgba(0, 0, 0, .1);
+        }
+
+        .product-img {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 13.5px;
+            line-height: 1"
+        }
+
+        .product-description {
+            margin: 0 10px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .product-subdescription {
+            font-weight: bolder;
+            font-size: 10px;
+        }
+
+        .product-price {
+            display: inline-block;
+            font-size: 20px;
+            text-decoration: none;
+            color: #ed2828;
+        }
+
+        .social {
+            background: orange;
+            padding: 22px 0;
+            border-collapse: unset;
+        }
+
+        .footer {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ******************************* HEADER ******************************* -->
+    <table class="header" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+
+        <!-- LOGO -->
+        <tr>
+            <td align="center"><a href="https://www.propz.com.br/" target="_blank"><img src="img/logo.png"
+                        alt="logo"></a></td>
+        </tr>
+    </table>
+
+    <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+        <!-- Titulo -->
+        <tr class="main-title">
+            <td><br><span>Confira nossas ofertas semanais</span><br><br></td>
+        </tr>
+
+    </table>
+
+
+    <!-- Divider  -->
+    <table class="divider" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- ******************************* Product Row ******************************* -->
+
+    <table class="product" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+        <!-- Product Images -->
+        <tr class="product-img">
+            <td align="center">
+                <a href="javascript:void(0)" target="_blank"><img width="200" height="auto" src="img/produto.jpg"
+                        alt="produto"></a>
+            </td>
+            <td align="center">
+                <a href="javascript:void(0)" target="_blank"><img width="200" height="auto" src="img/produto.jpg"
+                        alt="produto"></a>
+            </td>
+            <td align="center">
+                <a href="javascript:void(0)" target="_blank"><img width="200" height="auto" src="img/produto.jpg"
+                        alt="produto"></a>
+            </td>
+        </tr>
+
+        <!-- Product Descriptions -->
+        <tr>
+            <td align="center">
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+            <td align="center">
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+            <td align="center">
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+        </tr>
+
+        <!-- Product subdescriptions -->
+        <tr>
+            <td align="center">
+                <p class="product-description product-subdescription">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+            <td align="center">
+                <p class="product-description product-subdescription">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+            <td align="center">
+                <p class="product-description product-subdescription">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+        </tr>
+
+        <!-- Product price -->
+        <tr>
+            <td align="center">
+                <br>
+                <span class="product-price">Por: R$125,90</span>
+            </td>
+            <td align="center">
+                <br>
+                <span class="product-price">Por: R$125,90</span>
+            </td>
+            <td align="center">
+                <br>
+                <span class="product-price">Por: R$125,90</span>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!-- ******************************* Product Row ******************************* -->
+
+    <table class="product" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+        <!-- Product Images -->
+        <tr class="product-img">
+            <td align="center">
+                <a href="javascript:void(0)" target="_blank"><img width="200" height="auto" src="img/produto.jpg"
+                        alt="produto"></a>
+            </td>
+            <td align="center">
+                <a href="javascript:void(0)" target="_blank"><img width="200" height="auto" src="img/produto.jpg"
+                        alt="produto"></a>
+            </td>
+            <td align="center">
+                <a href="javascript:void(0)" target="_blank"><img width="200" height="auto" src="img/produto.jpg"
+                        alt="produto"></a>
+            </td>
+        </tr>
+
+        <!-- Product Descriptions -->
+        <tr>
+            <td align="center">
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+            <td align="center">
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+            <td align="center">
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+        </tr>
+
+        <!-- Product subdescriptions -->
+        <tr>
+            <td align="center">
+                <p class="product-description product-subdescription">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+            <td align="center">
+                <p class="product-description product-subdescription">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+            <td align="center">
+                <p class="product-description product-subdescription">
+                    Lorem ipsum dolor sit amet</p>
+            </td>
+        </tr>
+
+        <!-- Product price -->
+        <tr>
+            <td align="center">
+                <br>
+                <span class="product-price">Por: R$125,90</span>
+            </td>
+            <td align="center">
+                <br>
+                <span class="product-price">Por: R$125,90</span>
+            </td>
+            <td align="center">
+                <br>
+                <span class="product-price">Por: R$125,90</span>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+
+
+    <!-- ******************************* Social Medias ******************************* -->
+
+    <!-- Divider -->
+    <table class="divider" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+        <!-- Titulo -->
+        <tr class="main-title">
+            <td><br><span>Acompanhe-nos nas redes sociais</span><br><br></td>
+        </tr>
+
+    </table>
+
+    <table class="social" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr align="center">
+
+            <td>
+                <a href="javascript:void(0)" target="_blank"><img width="60" height="60" src="img/facebook.png"
+                        alt="facebook" /></a>
+            </td>
+            <td>
+                <a href="javascript:void(0)" target="_blank"><img width="60" height="60" src="img/twitter.png"
+                        alt="twitter" /></a>
+            </td>
+            <td>
+                <a href="javascript:void(0)" target="_blank"><img width="60" height="60" src="img/instagram.png"
+                        alt="instagram" /></a>
+            </td>
+            <td>
+                <a href="javascript:void(0)" target="_blank"><img width="60" height="60" src="img/youtube.png"
+                        alt="youtube" /></a>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <!-- ******************************* FOOTER ******************************* -->
+    <table class="footer" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+            <td><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.<br><br></td>
+        </tr>
+    </table>
+
+
+</body>
